@@ -32,6 +32,33 @@ class ActivitySeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'title' => 'Praktikum Laravel',
+                'description' => 'Membuat aplikasi menggunakan Laravel.',
+                'activity_date' => '2026-10-15',
+                'category' => 'Praktikum',
+                'status' => 'Done',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title' => 'Review Project',
+                'description' => 'Review hasil project.',
+                'activity_date' => '2026-10-20',
+                'category' => 'Project',
+                'status' => 'Planned',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title' => 'Presentasi Project',
+                'description' => 'Presentasi hasil pengembangan aplikasi.',
+                'activity_date' => '2026-10-25',
+                'category' => 'Presentasi',
+                'status' => 'Ongoing',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

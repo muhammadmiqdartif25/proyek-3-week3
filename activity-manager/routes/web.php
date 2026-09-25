@@ -7,4 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('activities', ActivityController::class);
+Route::get('/activities', [ActivityController::class, 'index'])
+    ->name('activities.index');
+
+Route::get('/activities/{activity}', [ActivityController::class, 'show'])
+    ->name('activities.show');
